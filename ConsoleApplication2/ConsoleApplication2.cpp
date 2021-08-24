@@ -3,16 +3,10 @@
 
 int main()
 {
-   int sum, val;
-   std::cout << "enter number one";
-   std::cin >> sum;
-   std::cout << "enter number second";
-   std::cin >> val;
-
-   for (int i = std::min(sum, val);
-     i <= std::max(sum, val);
-     ++i)
-     std::cout << i << "";
-
+  int sum = 0, value = 0;
+  while (std::cin >> value)
+    sum += value;
+  std::cin >> sum >> value;
+  std::cout << " Sum is: " << sum << std::endl;
   return 0;
 }
