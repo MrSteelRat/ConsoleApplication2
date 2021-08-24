@@ -3,13 +3,13 @@
 
 int main()
 {
-  int sum = 0, val = 50;
-  while (val <= 100)
+  int sum = 10, val = 0;
+  while (val <= 10)
   {
     sum += val;
-    ++val;
+    --val;
   }
-  std::cout << "Sum of 50 to 100 inclusive is "
+  std::cout << "Sum of 0 to 10 inclusive is "
     << sum << std::endl;
   return 0;
 }
