@@ -3,13 +3,16 @@
 
 int main()
 {
-  int sum = 10, val = 0;
-  while (val <= 10)
-  {
-    sum += val;
-    --val;
-  }
-  std::cout << "Sum of 0 to 10 inclusive is "
-    << sum << std::endl;
+   int sum, val;
+   std::cout << "enter number one";
+   std::cin >> sum;
+   std::cout << "enter number second";
+   std::cin >> val;
+
+   for (int i = std::min(sum, val);
+     i <= std::max(sum, val);
+     ++i)
+     std::cout << i << "";
+
   return 0;
 }
